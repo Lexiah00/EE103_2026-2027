@@ -1,0 +1,10 @@
+cube = int(input("Enter a positive integer: "))
+yn = 0
+for guess in range(cube + 1):
+    if guess**3 == cube:
+        yn = 1
+        break
+if yn == 1: 
+    print(f"Cube root of {cube} is {guess}")
+else:
+    print(f"{cube} is not a perfect cube")

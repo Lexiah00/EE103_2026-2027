@@ -1,0 +1,7 @@
+n = input("Enter n: ")
+total = 0.0
+for _ in range(int(n)):
+    total += 0.1
+print(f"Total: {total}")
+print(f"Equal: {total == int(n) / 10}")
+print(f"Close enough: {abs(total - int(n) / 10) < 1e-9}")
